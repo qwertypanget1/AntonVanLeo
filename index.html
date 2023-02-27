@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body{
+         background-image: linear-gradient(to bottom right, rgb(233, 163, 12), rgb(73, 43, 206));
+       }
+ 
+ .navicon{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   padding: 5px;
+   width: 50px;
+   height: 50px;
+   
+ }
+       .carousel-item {
+     height: 100vh;
+     min-height: 400px;
+ }
+ .carousel-caption {
+     bottom: 220px;
+     z-index: 2;
+ }
+ .carousel-caption h5 {
+     font-size: 50px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-top: 35px;
+ }
+ .carousel-caption p {
+     width: 80%;
+     margin: auto;
+     font-size: 20px;
+ }
+ .carousel-inner:before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: rgba(22, 22, 22, 0.7);
+     z-index: 1;
+ }
+ 
+ .updates{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   font-size: larger;
+   color: rgb(255, 255, 255);
+   padding: 50px;
+   font-weight: bold;
+   height: fit-content;
+ }
+ .poster {
+   border: 3px solid #000000;
+   border-radius: 4px;
+   padding: 5px;
+   width: 300px;
+   height: 300px;
+   
+   
+ }
+ 
+ 
+   </style>
+
+
+</head>
+
+
+
+  <body> 
+   <h1 style="color: rgb(0, 0, 0);"> Welcome Onces! </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand" style="color: palevioletred;">Getting to know Twice</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="#" class="nav-item nav-link active" style="color: palevioletred;"></a>
+                  <a href="#" class="nav-item nav-link" style="color: palevioletred;">Community</a>
+                  <a href="#" class="nav-item nav-link" style="color: palevioletred;">Albums</a>
+                  <a href="#" class="nav-item nav-link disabled" tabindex="-1" style="color: palevioletred;">Other Merchs</a>
+              </div>
+              <div class="navbar-nav ms-auto">
+                  <a href="#" class="nav-item nav-link" style="color: palevioletred;">Login</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/merch1.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="image/merch2.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="image/merch3.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!-- Info -->
+<div id="gamesdiv"> 
+    <div class="updates col-md-4">
+  <h2 style="color: palevioletred;">Get the latest updates of Twice!</h2>
+  <img src="image/update0.jpg" height="28" alt="CoolBrand" class="poster">
+          
+  
+  
+</div>
+  
+</div>
+  <hr>
+  <footer>
+    <div id = "try">
+      <div class="row">
+          <div class="col-md-6">
+              <p>All Rights Reserved &copy; 2023 W3Schools | Tutorial Republic</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+              <a href="#" class="text-dark">Terms of Use</a> 
+              <span class="text-muted mx-2">|</span> 
+              <a href="#" class="text-dark">Privacy Policy</a>
+          </div>
+      </div>
+  </footer>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
